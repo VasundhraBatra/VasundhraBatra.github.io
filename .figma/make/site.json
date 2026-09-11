@@ -1,0 +1,10 @@
+{
+  "description": "Showcase your personal brand with a customizable website that highlights your skills, projects, and experiences, making it easy for potential employers or clients to connect.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
