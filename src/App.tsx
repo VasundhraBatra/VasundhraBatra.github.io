@@ -4,7 +4,7 @@ const PROJECTS = [
   {
     id: "01",
     name: "Distributed Cache Layer",
-    stack: ["Go", "Redis", "gRPC"],
+    stack: [ "Redis", "gRPC"],
     desc: "A write-through cache layer handling 200k req/s with sub-millisecond p99 latency. Includes automatic sharding and a circuit breaker.",
     link: "#",
   },
