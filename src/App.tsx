@@ -47,7 +47,7 @@ function Nav() {
   return (
     <nav style={{ borderBottom: `1px solid ${BORDER}`, background: `${BG}e6` }}
       className="fixed top-0 left-0 right-0 z-50 backdrop-blur">
-      <div className="max-w-5xl px-4 flex items-center justify-between h-14">
+      <div className="max-w-5xl mx-auto px-6 flex items-center justify-between h-14">
         <span style={{ color: ACCENT }} className="text-sm font-bold tracking-widest uppercase">
           VB
         </span>
@@ -69,9 +69,9 @@ function Nav() {
 
 function Hero() {
   return (
-    <section className="min-h-screen flex flex-col justify-end pb-20 pt-32 px-4 max-w-5xl">
+    <section className="min-h-screen flex flex-col justify-end pb-20 pt-32 px-6 max-w-5xl mx-auto">
       <div className="mb-6 text-xs tracking-[0.3em] uppercase" style={{ color: DIM }}>
-        Software Engineer — Systems &amp; Infrastructure
+        Senior Software Engineer — Systems &amp; Infrastructure
       </div>
       <h1 className="font-bold leading-[0.9] tracking-tight mb-8"
         style={{ fontSize: "clamp(2.8rem,8vw,6rem)", color: TEXT }}>
@@ -119,7 +119,7 @@ function Work() {
   const [hovered, setHovered] = useState<string | null>(null);
 
   return (
-    <section id="work" className="py-24 px-4 max-w-5xl">
+    <section id="work" className="py-24 px-6 max-w-5xl mx-auto">
       <div className="flex items-baseline gap-4 mb-16">
         <span className="text-xs font-bold tracking-widest uppercase" style={{ color: ACCENT }}>01</span>
         <h2 className="text-2xl font-bold tracking-tight" style={{ color: TEXT }}>Work Experience</h2>
@@ -172,7 +172,7 @@ function Work() {
 
 function About() {
   return (
-    <section id="about" className="py-24 px-4 max-w-5xl">
+    <section id="about" className="py-24 px-6 max-w-5xl mx-auto">
       <div className="grid grid-cols-1 md:grid-cols-[1fr_1.5fr] gap-16">
         <div>
           <div className="flex items-baseline gap-4 mb-8">
@@ -273,7 +273,7 @@ function About() {
 
 function Contact() {
   return (
-    <section id="contact" className="py-24 px-4 max-w-5xl"
+    <section id="contact" className="py-24 px-6 max-w-5xl mx-auto"
       style={{ borderTop: `1px solid ${BORDER}` }}>
       <div className="flex items-baseline gap-4 mb-12">
         <span className="text-xs font-bold tracking-widest uppercase" style={{ color: ACCENT }}>03</span>
@@ -316,8 +316,8 @@ function Contact() {
 
 function Footer() {
   return (
-    <footer className="py-8 px-4" style={{ borderTop: `1px solid ${BORDER}` }}>
-      <div className="max-w-5xl text-xs uppercase tracking-widest"
+    <footer className="py-8 px-6" style={{ borderTop: `1px solid ${BORDER}` }}>
+      <div className="max-w-5xl mx-auto text-xs uppercase tracking-widest"
         style={{ color: MUTED }}>
         <span>© 2026 Vasundhra Batra</span>
       </div>
