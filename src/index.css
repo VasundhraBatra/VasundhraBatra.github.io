@@ -3,13 +3,13 @@
 
 :root {
   --font-mono: 'JetBrains Mono', ui-monospace, monospace;
-  --color-bg: #0a0a0a;
-  --color-surface: #111111;
-  --color-border: #222222;
-  --color-muted: #444444;
-  --color-dim: #888888;
-  --color-text: #e8e8e8;
-  --color-accent: #f5a623;
+  --color-bg: #eeece4;
+  --color-surface: #f8f7f1;
+  --color-border: #d8d4c4;
+  --color-muted: #847d68;
+  --color-dim: #655f4d;
+  --color-text: #1f1d16;
+  --color-accent: #c98a1c;
 }
 
 * {

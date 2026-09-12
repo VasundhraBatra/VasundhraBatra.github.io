@@ -35,7 +35,7 @@ function Nav() {
     <nav className="fixed top-0 left-0 right-0 z-50 border-b border-[--color-border] bg-[--color-bg]/90 backdrop-blur">
       <div className="max-w-5xl mx-auto px-6 flex items-center justify-between h-14">
         <span className="text-[--color-accent] text-sm font-bold tracking-widest uppercase">
-          &#x2f;&#x2f;&nbsp;YN
+          VB
         </span>
         <div className="flex gap-8 text-xs text-[--color-dim] tracking-widest uppercase">
           {["work", "about", "contact"].map((s) => (
@@ -60,8 +60,8 @@ function Hero() {
         Software Engineer — Systems &amp; Infrastructure
       </div>
       <h1 className="text-[clamp(2.8rem,8vw,6rem)] font-bold leading-[0.9] tracking-tight text-[--color-text] mb-8">
-        Your<br />
-        <span className="text-[--color-accent]">Name.</span>
+        Vasundhra<br />
+        <span className="text-[--color-accent]">Batra.</span>
       </h1>
       <p className="max-w-xl text-[--color-dim] text-sm leading-relaxed mb-12">
         I build reliable, high-throughput systems at the intersection of
@@ -179,7 +179,7 @@ function About() {
           <div className="mb-8 relative w-48 h-48 border border-[--color-border]">
             <img
               src="/headshot.jpg"
-              alt="Your Name"
+              alt="Vasundhra Batra"
               className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
               onError={(e) => {
                 (e.target as HTMLImageElement).style.display = "none";
@@ -279,13 +279,14 @@ function Contact() {
 
         <div className="flex flex-col gap-3">
           {[
-            ["GitHub", "github.com/yourhandle"],
-            ["LinkedIn", "linkedin.com/in/yourname"],
-            ["Resume", "Download PDF →"],
-          ].map(([label, val]) => (
+            ["GitHub", "github.com/VasundhraBatra", "https://github.com/VasundhraBatra?tab=repositories"],
+            ["LinkedIn", "linkedin.com/in/vasu-batra", "https://www.linkedin.com/in/vasu-batra/"],
+          ].map(([label, val, url]) => (
             <a
               key={label}
-              href="#"
+              href={url}
+              target="_blank"
+              rel="noopener noreferrer"
               className="group flex items-center justify-between border border-[--color-border] px-4 py-3 hover:border-[--color-accent] transition-colors duration-150"
             >
               <span className="text-xs uppercase tracking-widest text-[--color-muted] group-hover:text-[--color-accent]">
@@ -305,9 +306,8 @@ function Contact() {
 function Footer() {
   return (
     <footer className="border-t border-[--color-border] py-8 px-6">
-      <div className="max-w-5xl mx-auto flex items-center justify-between text-xs text-[--color-muted] uppercase tracking-widest">
-        <span>© 2026 Your Name</span>
-        <span className="text-[--color-accent]">&#x2f;&#x2f; Built with precision</span>
+      <div className="max-w-5xl mx-auto text-xs text-[--color-muted] uppercase tracking-widest">
+        <span>© 2026 Vasundhra Batra</span>
       </div>
     </footer>
   );
