@@ -1,4 +1,5 @@
 import { useState } from "react";
+import headshotImg from "./headshot.jpg";
 
 const ACCENT = "#c98a1c";
 const BG     = "#eeece4";
@@ -206,7 +207,7 @@ function About() {
 
           <div className="mb-8 relative w-48 h-48" style={{ border: `1px solid ${BORDER}` }}>
             <img
-              src="/headshot.jpg"
+              src={headshotImg}
               alt="Vasundhra Batra"
               className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
               onError={(e) => {
